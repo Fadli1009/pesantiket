@@ -88,14 +88,14 @@ const DetailTicketCom = () => {
             <img src={detailImg} alt="" className="w-full object-cover" />
             <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, natus fugiat sunt odit modi quasi cumque debitis soluta blanditiis? Dolorem neque rem eveniet sit quam necessitatibus perspiciatis voluptates, molestias commodi quaerat nemo fugit laudantium nam? Numquam ab, nesciunt maxime nisi veniam quos voluptatem, in delectus, eveniet consequuntur ullam soluta. Accusamus.</p>
             <Judul judul={"Booking Detail"} />
-            <div className="flex justify-between mb-10">
+            <div className="flex justify-between mb-10 flex-wrap space-y-5 lg:space-x-0">
                 <div className="flex flex-col">
                     <label htmlFor="start" className="font-semibold">Dari :</label>
-                    <input type="date" name="" id="start" value={tanggalMulai} onChange={(e) => handleChange("start", e.target.value)} className="border w-[400px] rounded border-gray-400 py-2 px-5 mt-3" />
+                    <input type="date" name="" id="start" value={tanggalMulai} onChange={(e) => handleChange("start", e.target.value)} className="border lg:w-[400px] rounded border-gray-400 py-2 px-5 mt-3" />
                 </div>
                 <div className="flex flex-col">
                     <label htmlFor="end" className="font-semibold">Sampai :</label>
-                    <input type="date" name="" id="end" value={tanggalSelesai} onChange={(e)=>handleChange("end",e.target.value)} className="border w-[400px] rounded border-gray-400 py-2 px-5 mt-3" />
+                    <input type="date" name="" id="end" value={tanggalSelesai} onChange={(e)=>handleChange("end",e.target.value)} className="border lg:w-[400px] rounded border-gray-400 py-2 px-5 mt-3" />
                 </div>
             </div>
             <div className="text-right">
@@ -106,7 +106,7 @@ const DetailTicketCom = () => {
             <Judul judul={"Foto tempat ini"} />
             <div className="grid grid-cols-4 gap-5">
                 {dataImage.map((item, index) => (
-                    <img src={item.foto} className="rounded-xl" />
+                    <img key={index} src={item.foto} className="rounded-xl" />
                 ))}
             </div>
             <Judul judul={"Reviews"} />

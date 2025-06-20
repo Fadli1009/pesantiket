@@ -1,14 +1,13 @@
 
-import Navbar from "../components/Navbar";
+import Container from "../components/Container";
 import HomeCom from "../components/Pages_Components/HomeCom";
 
 const Home = () => {
     return (
         <>
-            <Navbar />
-            <div className="w-[80%] mx-auto pt-20">
+            <Container>
                 <HomeCom />
-            </div>
+            </Container>
         </>
     );
 }

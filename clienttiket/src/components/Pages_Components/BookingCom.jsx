@@ -34,21 +34,21 @@ const BookingCom = () => {
                         <form className="space-y-5" onSubmit={handleSubmit}>
                             <div className="flex flex-col">
                                 <label htmlFor="start" className="font-semibold">Nama Lengkap</label>
-                                <input type="text" name="nama_lengkap" id="start" className=" w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
+                                <input type="text" name="nama_lengkap" id="start" className=" lg:w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
                             </div>
                             <div className="flex flex-col">
                                 <label htmlFor="end" className="font-semibold">Email</label>
-                                <input type="email" name="email" id="end" className="border w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
+                                <input type="email" name="email" id="end" className=" lg:w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
                             </div>
                             <div className="flex flex-col">
                                 <label htmlFor="end" className="font-semibold">Nomor HP</label>
-                                <input type="number" name="nomorHp" id="end" className="border w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
+                                <input type="number" name="nomorHp" id="end" className=" lg:w-[400px] rounded border-gray-400 py-2 px-5 mt-3 outline" />
                             </div>
                             <div className="flex flex-col">
                                 <label htmlFor="end" className="font-semibold">Jumlah Orang</label>
                                 <div className="flex space-x-3 items-center">
                                     <button type="button" className="bg-cyan-500 rounded-2xl h-10 w-10 font-bold text-white text-2xl" onClick={handleAdd}>+</button>
-                                    <input type="text" name="jumlahOrang" id="end" value={count} className="border w-[60px] text-center rounded border-gray-400 py-2 px-5 mt-3 outline" readOnly />
+                                    <input type="text" name="jumlahOrang" id="end" value={count} className=" w-[60px] text-center rounded border-gray-400 py-2 px-5 mt-3 outline" readOnly />
                                     <button type="button" className="bg-cyan-500 rounded-2xl h-10 w-10 font-bold text-white text-2xl" onClick={handleRemove}>-</button>
                                 </div>
                             </div>
